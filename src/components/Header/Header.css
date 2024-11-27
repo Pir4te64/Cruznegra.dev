@@ -1,9 +1,11 @@
 .img-rotate {
-  transition: transform 0.4s ease-in-out; /* Rotación suave con duración de 0.5 segundos */
+  transition: transform 0.4s ease-in-out;
+  /* Rotación suave con duración de 0.5 segundos */
 }
 
 .img-rotate:hover {
-  transform: rotate(180deg); /* Rotación de 180 grados */
+  transform: rotate(180deg);
+  /* Rotación de 180 grados */
 }
 
 .link-hover-effect {
@@ -19,7 +21,17 @@
 }
 
 .link-hover-effect:hover {
-  color: white; /* Color del texto al hacer hover */
-  background-color: transparent; /* Fondo transparente */
-  border-color: white; /* Borde blanco */
+  color: white;
+  /* Color del texto al hacer hover */
+  background-color: transparent;
+  /* Fondo transparente */
+  border-color: white;
+  /* Borde blanco */
+}
+
+.custom-border {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 1);
 }

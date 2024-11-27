@@ -1,0 +1,26 @@
+.custom-background {
+  position: relative;
+  /* Necesario para posicionar el pseudo-elemento */
+  z-index: 1;
+  /* Coloca el contenido por encima del pseudo-elemento */
+}
+
+.custom-background::before {
+  content: "";
+  /* Requerido para los pseudo-elementos */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  /* Aplica el desenfoque */
+  -webkit-filter: blur(8px);
+  /* Compatibilidad con navegadores antiguos */
+  z-index: -1;
+  /* Coloca el pseudo-elemento detrás del contenido */
+}

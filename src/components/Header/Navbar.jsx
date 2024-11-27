@@ -6,9 +6,9 @@ import Logo from "../../assets/CruzNegra.svg";
 const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   return (
-    <div className="text-white border-2 border-white lg:m-8 m-4 rounded-2xl">
+    <div className="text-white rounded-[20px] border-2 border-white m-2 p-2 sm:m-3 sm:p-3 md:m-5 md:p-5">
       {/* Main Container */}
-      <div className="lg:flex lg:items-center lg:justify-between flex-col">
+      <div className="lg:flex lg:items-center lg:justify-between flex-col ">
         <div className="w-full mb-4">
           {/* Contenedor de navbar y texto con botón */}
           <div className="flex items-center w-full ">

@@ -2,13 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #020202;
   font-family: "Aeonik Pro", sans-serif;
-  scroll-behavior: smooth;
-  overflow-y: auto; /* Activa el desplazamiento vertical si es necesario */
+  overflow-y: auto;
   overflow-x: hidden;
 }
+
 @font-face {
   font-family: "Aeonik Pro";
   src: url("/fonts/AeonikPro-Regular.woff2") format("woff2"),
