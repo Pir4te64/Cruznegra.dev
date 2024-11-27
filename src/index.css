@@ -4,13 +4,10 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: #020202;
-  font-family: "Aeonik Pro", sans-serif;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: #020202;
+  font-family: "Aeonik Pro", sans-serif;
 }
 
 @font-face {
