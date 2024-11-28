@@ -17,9 +17,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(8px);
+  /* filter: blur(3px); */
   /* Aplica el desenfoque */
-  -webkit-filter: blur(8px);
+  /* -webkit-filter: blur(3px); */
   /* Compatibilidad con navegadores antiguos */
   z-index: -1;
   /* Coloca el pseudo-elemento detrás del contenido */

@@ -1,7 +1,7 @@
 const HeaderText = () => {
   return (
-    <div className="lg:text-left lg:m-0 m-5">
-      <h1 className="text-sm font-normal mb-4 leading-5 lg:text-2xl lg:font-bold lg:leading-tight">
+    <div className="lg:text-left lg:m-0 m-2 md:m-5 ">
+      <h1 className="text-md font-normal mb-4 leading-5 lg:text-2xl lg:font-bold lg:leading-tight">
         At CruzNegra, we believe technology should solve problems and inspire
         trust, creativity, and exclusivity.
       </h1>

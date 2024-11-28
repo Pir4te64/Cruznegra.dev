@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/bundled/locomotive-scroll.css"; // Estilos necesarios
+import "locomotive-scroll/dist/locomotive-scroll.css";
 
 const SmoothScroll = ({ children }) => {
   useEffect(() => {
@@ -14,7 +14,11 @@ const SmoothScroll = ({ children }) => {
     return () => scroll.destroy();
   }, []);
 
-  return <div data-scroll-container>{children}</div>;
+  return (
+    <div data-scroll-container className="overflow-hidden">
+      {children}
+    </div>
+  );
 };
 
 export default SmoothScroll;

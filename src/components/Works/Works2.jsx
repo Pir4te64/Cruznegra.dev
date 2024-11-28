@@ -26,7 +26,7 @@ const WorksRight = () => {
 
   return (
     <motion.div
-      className="grid grid-cols-1 md:grid-cols-3 px-4 py-8 gap-4 md:gap-8 overflow-y-hidden"
+      className="grid grid-cols-1 md:grid-cols-3 px-4 py-8 gap-4 md:gap-8 overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"

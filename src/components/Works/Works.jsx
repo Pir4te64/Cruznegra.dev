@@ -24,7 +24,7 @@ const WorksLeft = ({ imageDesktop, imageMobile, projectName, description }) => {
 
   return (
     <motion.div
-      className="grid grid-cols-1 md:grid-cols-3 px-4 md:py-52 gap-4 md:gap-8 overflow-y-hidden"
+      className="grid grid-cols-1 md:grid-cols-3 px-4 md:py-52 gap-4 md:gap-8 overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -49,6 +49,7 @@ const WorksLeft = ({ imageDesktop, imageMobile, projectName, description }) => {
           viewport={{ once: true, amount: 0.5 }}
         />
 
+        {/* Imagen para pantallas móviles */}
         <motion.img
           src={imageMobile}
           alt="Vista previa de proyectos"

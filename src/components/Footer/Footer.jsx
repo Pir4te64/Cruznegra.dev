@@ -2,8 +2,8 @@ import React from "react";
 import cruznegra from "../../assets/CruzNegra.svg";
 const Footer = () => {
   return (
-    <footer id="contact">
-      <div className="w-full px-4 py-8 md:pt-5 h-[360px]" id="footer">
+    <footer id="contact" className="z-50">
+      <div className="w-full px-4 py-8 md:pt-5 " id="footer">
         <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center">
           {/* Primer Div */}
           <div className="p-4 rounded-lg shadow-md">
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         {/* Nueva Sección */}
-        <div className="mt-10 w-full h-[329px] flex flex-col">
+        <div className="mt-10 w-full h-[150px] md:h-[329px] flex flex-col">
           {/* Contenido superior: Logo y Links */}
           <div className="flex flex-row items-center justify-between  h-full px-4">
             {/* Logo */}

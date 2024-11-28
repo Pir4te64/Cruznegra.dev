@@ -8,6 +8,7 @@ import SectionUs from "./components/US/SectionUs";
 import ServicesSection from "./components/US/ServicesSection";
 import Projects from "./components/Works/Projects";
 import SmoothScroll from "./components/Smooth";
+import ScrollToTopButton from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <ContacSection />
       <Clients />
       <Footer />
+      <ScrollToTopButton />
     </SmoothScroll>
   );
 }

@@ -13,7 +13,7 @@ export const services = [
     title: "Custom Website Development for Businesses",
     description:
       "Transform your online presence with bespoke websites tailored to your needs. Informative websites, e-commerce platforms, client portals, corporate blogs.",
-    techStack: "HTML ⋅ CSS ⋅ JavaScript ⋅ Node.js ⋅ PHP ⋅ Laravel",
+    techStack: "HTML ⋅ CSS ⋅ JavaScript ⋅ Node.js ⋅ PHP ",
     direccion: "left",
   },
   {
@@ -37,8 +37,7 @@ export const services = [
     title: "Mobile App Development",
     description:
       "Bring your ideas to life with high-performing mobile apps for all platforms. E-commerce apps, delivery services, and corporate tools.",
-    techStack:
-      " Android, iOS, Flutter, React Native.",
+    techStack: "Android, iOS, Flutter, React Native.",
     direccion: "right",
   },
   {
@@ -46,8 +45,7 @@ export const services = [
     title: "E-Learning and Educational Management Systems",
     description:
       "Create engaging platforms for education and learning management. Course management, progress tracking, and certifications.",
-    techStack:
-      "LMS platforms like Moodle, Open edX, or custom-built solutions.",
+    techStack: "LMS platforms like Moodle, or custom-built solutions.",
     direccion: "left",
   },
   {
@@ -55,7 +53,7 @@ export const services = [
     title: "API Integration and Third-Party Solutions",
     description:
       "Expand functionality by seamlessly connecting your system to other platforms.",
-    techStack: "PayPal ⋅ Stripe ⋅ Google Maps ⋅ Social Media ⋅ CRM/ERP",
+    techStack: "PayPal ⋅ Stripe ⋅ Social Media ⋅ CRM/ERP",
     direccion: "right",
   },
   {
@@ -63,7 +61,7 @@ export const services = [
     title: "E-Commerce Solutions",
     description:
       "Launch and scale your online store with powerful e-commerce platforms. Inventory management, payment gateways, and mobile optimization.",
-    techStack: "Shopify ⋅ WooCommerce ⋅ Magento ⋅ Fully custom-built solutions",
+    techStack: "Shopify ⋅ WooCommerce ⋅ Fully custom-built solutions",
     direccion: "left",
   },
   {

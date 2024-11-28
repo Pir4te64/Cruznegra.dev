@@ -8,7 +8,7 @@ const ServiceCard = ({ image, title, description, techStack, direccion }) => {
 
   return (
     <motion.div
-      className="px-4 py-4 sm:px-6 sm:py-8 rounded-lg shadow-md flex-1 min-w-[350px]"
+      className="px-4 py-4 sm:px-6 sm:py-8 rounded-lg shadow-md flex flex-col justify-center items-center flex-1 min-w-[350px] "
       ref={cardRef} // Asignamos la referencia
       initial={{ opacity: 0, y: 50 }} // Estado inicial (fuera de vista)
       animate={isInView ? { opacity: 1, y: 0 } : {}} // Se anima solo cuando está visible
@@ -17,7 +17,7 @@ const ServiceCard = ({ image, title, description, techStack, direccion }) => {
     >
       {/* Contenedor de la imagen y el título */}
       <motion.div
-        className={`flex items-center gap-6 mb-5 ${
+        className={`flex items-center gap-2 md:gap-6 mb-5 ${
           direccion === "right" ? "flex-row-reverse sm:flex-row" : "flex-row"
         }`}
         initial={{ opacity: 0, x: direccion === "right" ? 50 : -50 }} // Desliza desde un lado dependiendo de la dirección
@@ -34,7 +34,7 @@ const ServiceCard = ({ image, title, description, techStack, direccion }) => {
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-contain rounded-lg"
+            className="w-full  md:h-full object-contain rounded-lg"
           />
         </motion.div>
 
@@ -46,7 +46,7 @@ const ServiceCard = ({ image, title, description, techStack, direccion }) => {
           transition={{ duration: 0.8, delay: 0.4 }} // Retraso después de la imagen
         >
           <h3
-            className={`text-lg sm:text-xl lg:text-2xl font-bold mb-2 text-white ${
+            className={`text-md sm:text-xl lg:text-2xl font-bold mb-0 md:mb-2 text-white ${
               direccion === "right" ? "text-right sm:text-left" : "text-left"
             }`}
           >
@@ -57,13 +57,13 @@ const ServiceCard = ({ image, title, description, techStack, direccion }) => {
 
       {/* Descripción y TechStack */}
       <motion.div
-        className="px-4 pt-4 sm:pt-6 border-2 border-white w-full rounded-md flex flex-col justify-between items-center"
+        className=" px-4 pt-0 sm:pt-6 border-2 border-white w-10/12 rounded-md flex flex-col justify-between items-center backdrop-blur-md"
         initial={{ opacity: 0, y: 20 }} // Comienza desplazado ligeramente hacia abajo
         animate={isInView ? { opacity: 1, y: 0 } : {}} // Se centra y se hace visible
         transition={{ duration: 0.8, delay: 0.6 }} // Retraso para aparecer después del título
       >
-        <div className="mt-4 mx-6">
-          <p className="text-white text-center font-medium text-sm sm:text-xl h-[100px]">
+        <div className="mt-0 md:mt-4 mx-0 md:mx-6 flex flex-col justify-center items-center h-[150px]">
+          <p className="text-white text-center font-medium text-sm sm:text-xl  ">
             {description}
           </p>
         </div>
@@ -73,7 +73,7 @@ const ServiceCard = ({ image, title, description, techStack, direccion }) => {
           animate={isInView ? { scale: 1, opacity: 1 } : {}} // Escala al tamaño completo y se hace visible
           transition={{ duration: 0.8, delay: 0.8 }} // Aparece al final
         >
-          <p className="text-black_cruznegra px-4 text-center font-extrabold text-xs sm:text-sm md:text-base">
+          <p className="text-black_cruznegra px-4 text-center font-extrabold text-[10px] sm:text-sm md:text-base">
             {techStack}
           </p>
         </motion.div>

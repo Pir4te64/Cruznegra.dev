@@ -9,9 +9,9 @@ const HeaderImg = () => {
       <motion.img
         src={Header}
         alt="Header"
-        className="w-full object-cover md:object-contain h-64 lg:h-auto"
-        initial={{ x: -300, opacity: 0 }} // Desde fuera de la pantalla
-        animate={{ x: 0, opacity: 1 }} // Aparece y se centra
+        className="w-full h-96 md:h-auto object-cover sm:object-fill" // Añadir object-fill en pantallas móviles
+        initial={{ opacity: 0, scale: 1.2 }} // Empieza opaca y un poco más grande
+        animate={{ opacity: 1, scale: 1 }} // Se hace visible y en tamaño normal
         transition={{ duration: 1.2 }} // Duración de la animación
       />
 

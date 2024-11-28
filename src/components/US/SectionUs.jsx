@@ -6,8 +6,13 @@ const SectionUs = () => {
   const isInView = useInView(sectionRef, { once: false, amount: 0.2 }); // Detecta si el contenedor está visible
 
   return (
-    <div className="w-full px-4 py-10" id="about" ref={sectionRef}>
-      <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="w-full px-4 py-10" ref={sectionRef}>
+      <div
+        className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-4"
+        data-scroll-section
+        data-scroll-call="section"
+        id="about"
+      >
         {/* Primer Div */}
         <div className="p-4 rounded-lg shadow-md">
           <motion.p
