@@ -1,4 +1,5 @@
 import Clients from "./components/Clients/Clients";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
 import ContacSection from "./components/US/ContacSection";
 import SectionBellow from "./components/US/SectionBelow";
@@ -16,6 +17,7 @@ function App() {
       <SectionBellow />
       <ContacSection />
       <Clients />
+      <Footer />
     </>
   );
 }

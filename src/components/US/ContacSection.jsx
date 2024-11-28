@@ -1,4 +1,3 @@
-import React from "react";
 import section from "../../assets/section.png";
 
 const ContacSection = () => {
@@ -10,7 +9,6 @@ const ContacSection = () => {
         alt="Sección de contacto"
         className="absolute w-full h-full object-cover md:object-contain"
       />
-
       {/* Contenedor de texto */}
       <div className="relative z-10 text-center  bg-opacity-70 text-white p-6 md:p-4 px-8 md:px-6 rounded-lg backdrop-blur-md hover:border-l hover:border-r transition-all border-neutral_lighter rounded-t-lg">
         <h1 className="text-lg md:text-4xl font-bold mb-0 md:mb-6">

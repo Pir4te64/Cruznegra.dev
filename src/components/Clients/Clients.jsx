@@ -3,18 +3,17 @@ import TestimonialCard from "./Card";
 
 const Clients = () => {
   return (
-    <div className="relative w-full h-[1268px] md:h-[649px] flex flex-col items-center justify-center">
+    <div className="relative w-full h-[1268px] md:h-[649px] my-20 flex flex-col items-center justify-center">
       {/* Contenedor de la Imagen */}
+      <img
+        src={clientsImage}
+        alt="Clientes"
+        className="absolute w-full h-full object-cover rounded-lg shadow-md "
+      />
       <div className="relative w-full h-3/4 flex flex-col items-center justify-center">
-        {/* Título */}
         <h1 className="relative z-10 pb-8 md:pb-0 text-2xl md:text-4xl font-bold text-center text-white ">
           Clients trust
         </h1>
-        <img
-          src={clientsImage}
-          alt="Clientes"
-          className="absolute w-full h-full object-cover rounded-lg shadow-md " // Agregamos blur
-        />
         {/* Contenedor de las tarjetas */}
         <div className="relative z-10 flex flex-wrap gap-4 px-4 justify-center">
           <section className="">
