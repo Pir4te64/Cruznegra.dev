@@ -1,3 +1,4 @@
+import Clients from "./components/Clients/Clients";
 import Navbar from "./components/Header/Navbar";
 import ContacSection from "./components/US/ContacSection";
 import SectionBellow from "./components/US/SectionBelow";
@@ -14,6 +15,7 @@ function App() {
       <Projects />
       <SectionBellow />
       <ContacSection />
+      <Clients />
     </>
   );
 }

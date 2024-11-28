@@ -6,7 +6,7 @@ const HeaderImg = () => {
       <img
         src={Header}
         alt="Header"
-        className="w-full object-contain h-64 lg:h-auto"
+        className="w-full object-cover md:object-contain h-64 lg:h-auto"
       />
 
       {/* Segunda imagen centrada */}
@@ -14,7 +14,7 @@ const HeaderImg = () => {
         <img
           src={Header2} // Aquí va la URL de tu segunda imagen
           alt="Centered Image"
-          className="w-full object-contain h-64 sm:h-96 lg:h-auto"
+          className="w-full object-cover md:object-contain h-64 sm:h-96 lg:h-auto"
         />
       </div>
     </div>
