@@ -24,3 +24,18 @@
   z-index: -1;
   /* Coloca el pseudo-elemento detrás del contenido */
 }
+
+.trapezoid {
+  position: relative;
+  background: white;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  border-top-left-radius: 15px;
+  /* Bordes superiores redondeados */
+  border-top-right-radius: 15px;
+  height: 10px;
+  /* Ajusta la altura */
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

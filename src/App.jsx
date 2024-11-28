@@ -1,3 +1,4 @@
+import AnimatedCursor from "react-animated-cursor";
 import Clients from "./components/Clients/Clients";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Header/Navbar";
@@ -10,6 +11,27 @@ import Projects from "./components/Works/Projects";
 function App() {
   return (
     <>
+      <AnimatedCursor
+        innerSize={20}
+        outerSize={50}
+        color="255, 255, 255"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <Navbar />
       <SectionUs />
       <ServicesSection />

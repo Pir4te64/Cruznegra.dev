@@ -38,7 +38,7 @@ export const services = [
     description:
       "Bring your ideas to life with high-performing mobile apps for all platforms. E-commerce apps, delivery services, and corporate tools.",
     techStack:
-      "Native apps (Android, iOS) or cross-platform (Flutter, React Native).",
+      " Android, iOS, Flutter, React Native.",
     direccion: "right",
   },
   {

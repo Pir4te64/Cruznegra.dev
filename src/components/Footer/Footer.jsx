@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Segundo Div */}
           <div className="p-4 rounded-lg shadow-md flex flex-col justify-between">
             <div>
-              <ul className="space-y-10">
+              <ul className="space-y-5 md:space-y-10">
                 <li>
                   <a
                     href="mailto:contact@cruznegra.com"
@@ -53,7 +53,7 @@ const Footer = () => {
               />
             </div>
             {/* Links */}
-            <div className="flex space-x-6">
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
               <a
                 href="https://instagram.com"
                 target="_blank"
