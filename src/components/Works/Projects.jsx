@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import WorksLeft from "./Works";
 import WorksRight from "./Works2";
@@ -13,11 +14,30 @@ const Projects = () => {
     setShowExtraProjects((prev) => !prev);
   };
 
+  // Variantes para las animaciones
+  const leftVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+    exit: { opacity: 0, x: -100, transition: { duration: 0.8 } }, // Para ocultar
+  };
+
+  const rightVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+    exit: { opacity: 0, x: 100, transition: { duration: 0.8 } }, // Para ocultar
+  };
+
   return (
-    <div id="project" className="overflow-hidden">
+    <div id="project">
       {/* Proyectos iniciales */}
       <div>
-        <div>
+        <motion.div
+          variants={leftVariants}
+          initial="hidden"
+          whileInView="visible"
+          exit="hidden" // Ocultar al salir del viewport
+          viewport={{ once: false, amount: 0.3 }} // Permitir que se vuelva a animar
+        >
           <WorksLeft
             imageDesktop={p1}
             imageMobile={p2}
@@ -25,11 +45,23 @@ const Projects = () => {
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             tags={["Etiqueta1", "Etiqueta2", "Etiqueta3"]}
           />
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          variants={rightVariants}
+          initial="hidden"
+          whileInView="visible"
+          exit="hidden" // Ocultar al salir del viewport
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <WorksRight />
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          variants={leftVariants}
+          initial="hidden"
+          whileInView="visible"
+          exit="hidden"
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <WorksLeft
             imageDesktop={p5}
             imageMobile={p6}
@@ -37,13 +69,19 @@ const Projects = () => {
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             tags={["Etiqueta1", "Etiqueta2", "Etiqueta3"]}
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* Mostrar/ocultar proyectos adicionales */}
       {showExtraProjects && (
         <div>
-          <div>
+          <motion.div
+            variants={leftVariants}
+            initial="hidden"
+            whileInView="visible"
+            exit="hidden"
+            viewport={{ once: false, amount: 0.3 }}
+          >
             <WorksLeft
               imageDesktop={p1}
               imageMobile={p2}
@@ -51,11 +89,23 @@ const Projects = () => {
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               tags={["Etiqueta1", "Etiqueta2", "Etiqueta3"]}
             />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            variants={rightVariants}
+            initial="hidden"
+            whileInView="visible"
+            exit="hidden"
+            viewport={{ once: false, amount: 0.3 }}
+          >
             <WorksRight />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            variants={leftVariants}
+            initial="hidden"
+            whileInView="visible"
+            exit="hidden"
+            viewport={{ once: false, amount: 0.3 }}
+          >
             <WorksLeft
               imageDesktop={p5}
               imageMobile={p6}
@@ -63,7 +113,7 @@ const Projects = () => {
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               tags={["Etiqueta1", "Etiqueta2", "Etiqueta3"]}
             />
-          </div>
+          </motion.div>
         </div>
       )}
 
