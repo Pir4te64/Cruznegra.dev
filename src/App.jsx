@@ -1,4 +1,6 @@
 import Navbar from "./components/Header/Navbar";
+import ContacSection from "./components/US/ContacSection";
+import SectionBellow from "./components/US/SectionBelow";
 import SectionUs from "./components/US/SectionUs";
 import ServicesSection from "./components/US/ServicesSection";
 import Projects from "./components/Works/Projects";
@@ -10,6 +12,8 @@ function App() {
       <SectionUs />
       <ServicesSection />
       <Projects />
+      <SectionBellow />
+      <ContacSection />
     </>
   );
 }

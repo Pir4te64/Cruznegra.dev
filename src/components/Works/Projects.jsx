@@ -14,7 +14,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div id="project">
       {/* Proyectos iniciales */}
       <div>
         <WorksLeft
@@ -56,7 +56,7 @@ const Projects = () => {
       )}
 
       {/* Botón para alternar la visibilidad */}
-      <div className="flex justify-center items-center mt-8">
+      <div className="flex justify-center items-center mt-5 md:mt-8 mb-8">
         <button
           onClick={toggleViewMore}
           className="px-6 py-2 bg-transparent text-white border rounded-lg shadow-md hover:bg-white hover:text-black_cruznegra focus:outline-none transition-all"
