@@ -21,3 +21,17 @@
   padding: 6px;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .boxProjecto {
+    position: absolute;
+    bottom: -80px;
+    left: 10px;
+    width: 80%;
+  }
+  .boxProjecto1 {
+    position: absolute;
+    bottom: -80px;
+    right: 10px;
+    width: 80%;
+  }
+}
