@@ -10,11 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "locomotive-scroll": "^5.0.0-beta.21",
     "motion": "^11.12.0",
     "react": "^18.3.1",
     "react-animated-cursor": "^2.11.2",
     "react-dom": "^18.3.1",
-    "react-multi-carousel": "^2.8.5"
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

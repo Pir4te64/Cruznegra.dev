@@ -1,41 +1,80 @@
+import { Link } from "react-scroll";
 import "./Header.css";
+
 const Links = () => {
   return (
     <div className="absolute -top-10 left-14 p-3 rounded shadow-lg">
       <ul className="space-y-2">
         <li>
-          <a href="#about" className="link-hover-effect">
+          <Link
+            className="link-hover-effect"
+            to="about"
+            smooth="easeInQuad"
+            duration={500}
+            offset={-50}
+          >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#project" className="link-hover-effect">
+          <Link
+            className="link-hover-effect"
+            to="project"
+            smooth="easeInQuad"
+            duration={500}
+            offset={-50}
+          >
             Project
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#contact" className="link-hover-effect">
+          <Link
+            className="link-hover-effect"
+            to="contact"
+            smooth="easeInQuad"
+            duration={500}
+            offset={-50}
+          >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
   );
 };
+
 export const LinksMobile = () => {
   return (
     <div className="flex space-x-6 mx-auto">
-      {/* Alineación centrada */}
-      <a href="#about" className="text-white hover:text-gray-400 font-normal">
+      <Link
+        to="about"
+        smooth="easeInQuad"
+        duration={500}
+        offset={-50}
+        className="text-white hover:text-gray-400 font-normal"
+      >
         About
-      </a>
-      <a href="#project" className="text-white hover:text-gray-400 font-normal">
+      </Link>
+      <Link
+        to="project"
+        smooth="easeInQuad"
+        duration={500}
+        offset={-50}
+        className="text-white hover:text-gray-400 font-normal"
+      >
         Project
-      </a>
-      <a href="#contact" className="text-white hover:text-gray-400 font-normal">
+      </Link>
+      <Link
+        to="contact"
+        smooth="easeInQuad"
+        duration={500}
+        offset={-50}
+        className="text-white hover:text-gray-400 font-normal"
+      >
         Contact
-      </a>
+      </Link>
     </div>
   );
 };
+
 export default Links;

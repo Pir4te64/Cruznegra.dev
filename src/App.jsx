@@ -7,10 +7,11 @@ import SectionBellow from "./components/US/SectionBelow";
 import SectionUs from "./components/US/SectionUs";
 import ServicesSection from "./components/US/ServicesSection";
 import Projects from "./components/Works/Projects";
+import SmoothScroll from "./components/Smooth";
 
 function App() {
   return (
-    <>
+    <SmoothScroll>
       <AnimatedCursor
         innerSize={20}
         outerSize={50}
@@ -40,7 +41,7 @@ function App() {
       <ContacSection />
       <Clients />
       <Footer />
-    </>
+    </SmoothScroll>
   );
 }
 
